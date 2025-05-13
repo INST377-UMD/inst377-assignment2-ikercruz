@@ -17,7 +17,6 @@
   <main>
     <h2>Let's chart some stocks!</h2>
   
-    <!-- Lookup Controls -->
     <select id="range">
       <option value="30">30 Days</option>
       <option value="60">60 Days</option>
@@ -26,11 +25,9 @@
     <input type="text" id="ticker" placeholder="Enter Stock Ticker (e.g. AAPL)">
     <button class="lookup-btn" onclick="fetchStock()">Lookup</button>
   
-    <!-- Chart Section -->
     <p id="noDataMessage" style="margin-top: 20px; color: #333;">Enter a stock ticker and click Lookup to see a chart.</p>
     <canvas id="stockChart" width="600" height="400" style="display: none; margin-top: 20px;"></canvas>
   
-    <!-- Reddit Table Section -->
     <h2 style="margin-top: 40px;">Top 5 Reddit Stocks</h2>
     <table id="redditTable" style="margin: auto; border-collapse: collapse; border: 2px solid black;">
       <thead>
