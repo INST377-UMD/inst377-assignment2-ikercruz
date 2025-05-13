@@ -1,4 +1,3 @@
-// Load 10 random dog images into carousel
 document.addEventListener("DOMContentLoaded", () => {
     fetch('https://dog.ceo/api/breeds/image/random/10')
       .then(res => res.json())
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   
 
-// Load all breeds and create buttons
 fetch('https://dogapi.dog/api/v2/breeds')
   .then(res => res.json())
   .then(data => {
@@ -47,7 +45,6 @@ function showBreedInfo(id) {
     });
 }
 
-// Voice command: Load Dog Breed <name>
 if (annyang) {
   annyang.addCommands({
     'load dog breed *breed': breed => {
