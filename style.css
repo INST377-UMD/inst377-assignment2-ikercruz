@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #fcd5b4; /* peach background */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li:hover {
+  background-color: #f44336; /* Change this to any color you like */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Buttons */
+.custom-btn {
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(0, 13, 255, 0.2);
+}
+
+.custom-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 13, 255, 0.4);
+}
+
+#quote {
+  margin: 30px auto;
+  padding: 20px;
+  width: 60%;
+  font-style: italic;
+  font-size: 18px;
+  color: #333;
+  background-color: #fff8e1;
+  border: 2px solid #f44336;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel Styles */
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+  justify-content: center;
+}
+
+.slider div {
+  flex: 0 0 auto;
+  margin: 0 10px;
+}
+
+.slider img,
+.carousel-img {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Breed Buttons Container */
+#breed-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Breed Info Box */
+#breed-info {
+  display: none;
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Audio Controls Footer */
+#audio-controls {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-top: 2px solid #ccc;
+  border-radius: 12px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lookup-btn {
+  padding: 10px 16px;
+  background-color: #4CAF50; /* green */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#stockChart {
+  margin-top: 20px;
+}
+
+#redditTable {
+  margin-top: 30px;
+  border-collapse: collapse;
+  width: 60%;
+  font-size: 16px;
+  background-color: white;
+  border: 2px solid #444;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#redditTable th,
+#redditTable td {
+  padding: 10px 15px;
+  border: 1px solid #aaa;
+  text-align: center;
+}
+
+#redditTable th {
+  background-color: #f44336;
+  color: white;
+}
+
+#redditTable a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#redditTable a:hover {
+  text-decoration: underline;
+}
