@@ -93,8 +93,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <td>${stock.no_of_comments}</td>
           <td>
             ${stock.sentiment === 'Bullish'
-              ? '<img src="assets/icons/bull.png" width="25">'
-              : '<img src="assets/icons/bear.png" width="25">'}
+              ? '<img src="bull.png" width="25">'
+              : '<img src="bear.png" width="25">'}
           </td>
         `;
         tbody.appendChild(row);
