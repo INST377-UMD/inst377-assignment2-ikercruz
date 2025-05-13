@@ -1,4 +1,4 @@
-const apiKey = 'a3kMIm5LMARdbSHYKIaN_nWDvI_uTfYv'; // replace this with your actual key
+const apiKey = 'a3kMIm5LMARdbSHYKIaN_nWDvI_uTfYv';
 
 async function fetchStock() {
   const ticker = document.getElementById('ticker').value.toUpperCase();
@@ -40,7 +40,6 @@ async function fetchStock() {
 
     const ctx = canvas.getContext('2d');
 
-    // Destroy previous chart if needed
     if (window.myChart) window.myChart.destroy();
 
     window.myChart = new Chart(ctx, {
@@ -71,12 +70,11 @@ async function fetchStock() {
   }
 }
 
-// Reddit Stocks Table (leave this part as-is unless you want to switch to local JSON)
 document.addEventListener("DOMContentLoaded", () => {
   fetch('https://cors-anywhere.herokuapp.com/https://tradestie.com/api/v1/apps/reddit?date=2022-04-03')
     .then(res => res.json())
     .then(data => {
-      console.log("Fetched Reddit data:", data);  // ✅ Add this line
+      console.log("Fetched Reddit data:", data); 
 
       const top5 = data.slice(0, 5);
       const tbody = document.querySelector('#redditTable tbody');
@@ -87,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       top5.forEach(stock => {
-        console.log("Stock:", stock);  // ✅ Add this too
+        console.log("Stock:", stock); 
 
         const row = document.createElement('tr');
         row.innerHTML = `
@@ -108,7 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// Voice Command: Lookup <stock>
 if (annyang) {
   annyang.addCommands({
     'lookup *stock': stock => {
